@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__sequential-thinking__sequentialthinking",
+      "Bash(where:*)",
+      "Bash(pip show:*)",
+      "Bash(pip install:*)",
+      "Bash(wc:*)",
+      "Bash(ls:*)",
+      "Skill(sc:analyze)",
+      "Bash(move \"C:\\\\Users\\\\MSi_H510m\\\\Downloads\\\\dev\\\\1004. framework\\\\docs\\\\00_reports\\\\AI Model Serving Platform - 시스템 요건 정의서 \\(SRS\\).md\" \"C:\\\\Users\\\\MSi_H510m\\\\Downloads\\\\dev\\\\1004. framework\\\\docs\\\\00_reports\\\\archive\"\" && move \"C:UsersMSi_H510mDownloadsdev1004. frameworkdocs00_reportsAI Serving Platform 전략적 포지셔닝 및 개발 경계 정의.md\" \"C:UsersMSi_H510mDownloadsdev1004. frameworkdocs00_reportsarchive\"\")",
+      "Bash(move \"C:\\\\Users\\\\MSi_H510m\\\\Downloads\\\\dev\\\\1004. framework\\\\docs\\\\00_reports\\\\AI 모델 서빙 백엔드 문서화 전략 및 모범 사례.docx.md\" \"C:\\\\Users\\\\MSi_H510m\\\\Downloads\\\\dev\\\\1004. framework\\\\docs\\\\00_reports\\\\archive\"\" && move \"C:UsersMSi_H510mDownloadsdev1004. frameworkdocs00_reportsClaude Opus 4.5 문서 관리 방안 구축.md\" \"C:UsersMSi_H510mDownloadsdev1004. frameworkdocs00_reportsarchive\"\")",
+      "Bash(move \"C:\\\\Users\\\\MSi_H510m\\\\Downloads\\\\dev\\\\1004. framework\\\\docs\\\\00_reports\\\\nginx_oss_vs_traefik_의사결정_문서.md\" \"C:\\\\Users\\\\MSi_H510m\\\\Downloads\\\\dev\\\\1004. framework\\\\docs\\\\00_reports\\\\archive\"\" && move \"C:UsersMSi_H510mDownloadsdev1004. frameworkdocs00_reports통신_방식_의사결정_문서_sync_webhook_sse_web_socket.md\" \"C:UsersMSi_H510mDownloadsdev1004. frameworkdocs00_reportsarchive\"\")",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}
