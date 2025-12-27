@@ -127,6 +127,9 @@ NNN_[제목].md
 |---|------|------|----------|
 | 000 | [000_template.md](./000_template.md) | - | ADR 작성 템플릿 |
 | 001 | [001_How_to_Securely_Expose_AI_API_Endpoint_[Nginx OSS].md](./001_How_to_Securely_Expose_AI_API_Endpoint_[Nginx%20OSS].md) | Accepted | AI API 외부 노출 방법, Nginx OSS 선택 |
+| 002 | [002_Defining_Scope_and_Architecture_Style_of_AI_Backend_Application.md](./002_Defining_Scope_and_Architecture_Style_of_AI_Backend_Application.md) | Accepted | AI 백엔드 정체성: Atomic AI Pipeline Manager, 선형 파이프라인 제한 |
+| 003 | [003_Inference_Task_Execution_Model_and_State_Management_Strategy.md](./003_Inference_Task_Execution_Model_and_State_Management_Strategy.md) | Accepted | 비동기 워크플로우 실행, Temporal 채택, SSE 스트리밍 |
+| 004 | [004_Universal_Connector_Strategy_for_Model_Integration.md](./004_Universal_Connector_Strategy_for_Model_Integration.md) | Accepted | Connector Pattern, Event Normalizer, Backend Agnostic 통신 |
 
 ---
 
