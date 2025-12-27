@@ -130,6 +130,7 @@ NNN_[제목].md
 | 002 | [002_Defining_Scope_and_Architecture_Style_of_AI_Backend_Application.md](./002_Defining_Scope_and_Architecture_Style_of_AI_Backend_Application.md) | Accepted | AI 백엔드 정체성: Atomic AI Pipeline Manager, 선형 파이프라인 제한 |
 | 003 | [003_Inference_Task_Execution_Model_and_State_Management_Strategy.md](./003_Inference_Task_Execution_Model_and_State_Management_Strategy.md) | Accepted | 비동기 워크플로우 실행, Temporal 채택, SSE 스트리밍 |
 | 004 | [004_Universal_Connector_Strategy_for_Model_Integration.md](./004_Universal_Connector_Strategy_for_Model_Integration.md) | Accepted | Connector Pattern, Event Normalizer, Backend Agnostic 통신 |
+| 005 | [005_Realtime_Streaming_Channel_Strategy.md](./005_Realtime_Streaming_Channel_Strategy.md) | Proposed | 실시간 토큰 스트리밍 채널 전략 (ADR-003 Dual Path 구현) |
 
 ---
 
