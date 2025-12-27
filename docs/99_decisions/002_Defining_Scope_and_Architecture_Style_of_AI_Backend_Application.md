@@ -816,9 +816,19 @@ Stage 2(추론)의 출력에는 언어 정보가 없다. 메타데이터가 중�
 
 ## 관련 문서 (Related)
 
-- [ADR-001: AI 서비스 엔드포인트를 외부에 안전하게 노출하는 방법](./001_How_to_Securely_Expose_AI_API_Endpoint_[Nginx%20OSS].md)
-- [01_overview/01_strategy.md](../01_overview/01_strategy.md) - 프로젝트 전략
-- [02_architecture/04_worker.md](../02_architecture/04_worker.md) - Temporal Worker 설계
+**선행 결정:**
+- [ADR-001: AI 서비스 엔드포인트 외부 노출](./001_How_to_Securely_Expose_AI_API_Endpoint_[Nginx%20OSS].md) — Edge Layer 도입
+
+**후속 결정 (본 ADR에서 정의한 파이프라인을 구체화):**
+- [ADR-003: 추론 작업 실행 모델](./003_Inference_Task_Execution_Model_and_State_Management_Strategy.md) — 파이프라인 실행 메커니즘 (Temporal)
+- [ADR-004: Universal Connector](./004_Universal_Connector_Strategy_for_Model_Integration.md) — 파이프라인 내 모델 통신 추상화
+- [ADR-005: 실시간 스트리밍 채널 전략](./005_Realtime_Streaming_Channel_Strategy.md) — 파이프라인 내 데이터 흐름 경로
+- [ADR-006: Worker 리소스 분리](./006_Worker_Resource_Separation_and_Parallel_Processing_Strategy.md) — 파이프라인 단계별 Worker 분리
+- [ADR-007: 추론 서버 배포 경계](./007_Inference_Server_Deployment_and_Worker_Communication_Boundary.md) — 파이프라인이 통신할 추론 서버 배포 책임
+
+**설계 문서:**
+- [01_overview/01_strategy.md](../01_overview/01_strategy.md) — 프로젝트 전략
+- [02_architecture/04_worker.md](../02_architecture/04_worker.md) — Temporal Worker 설계 (구현 시 작성)
 
 ---
 

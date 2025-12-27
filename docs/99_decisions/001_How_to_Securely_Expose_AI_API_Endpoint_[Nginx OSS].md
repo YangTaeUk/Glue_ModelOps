@@ -545,9 +545,13 @@ Edge Abstraction Layer 구현을 위한 후보군:
 
 ## 5. 관련 문서 (Related)
 
-- [02_architecture/03_gateway.md](../02_architecture/03_gateway.md) - Nginx Gateway 상세 설계
-- [01_overview/02_srs.md](../01_overview/02_srs.md) - 시스템 요구사항 (REQ-SEC-*)
-- [00_reports/archive/nginx_oss_vs_traefik_의사결정_문서.md](../00_reports/archive/nginx_oss_vs_traefik_의사결정_문서.md) - 기술 비교 상세
+**후속 결정 (본 ADR에서 정의한 Edge Layer를 구체화):**
+- [ADR-008: 시스템 클라이언트 인증 및 접근 제어 전략](./008_System_Client_Authentication_and_Access_Control_Strategy.md) — Edge Layer의 인증 책임 구체화
+
+**설계/운영 문서:**
+- [02_architecture/03_gateway.md](../02_architecture/03_gateway.md) — Nginx Gateway 상세 설계
+- [01_overview/02_srs.md](../01_overview/02_srs.md) — 시스템 요구사항 (REQ-SEC-*)
+- [00_reports/archive/nginx_oss_vs_traefik_의사결정_문서.md](../00_reports/archive/nginx_oss_vs_traefik_의사결정_문서.md) — 기술 비교 상세
 
 ---
 

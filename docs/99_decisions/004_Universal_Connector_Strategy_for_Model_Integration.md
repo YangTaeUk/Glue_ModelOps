@@ -585,9 +585,14 @@ while streaming:
 
 ## 관련 문서 (Related)
 
-- [ADR-001: AI 서비스 엔드포인트 외부 노출](./001_How_to_Securely_Expose_AI_API_Endpoint_[Nginx%20OSS].md) - Edge Layer
-- [ADR-002: AI 백엔드 범위 및 아키텍처 스타일](./002_Defining_Scope_and_Architecture_Style_of_AI_Backend_Application.md) - 파이프라인 정의
-- [ADR-003: 추론 작업 실행 모델](./003_Inference_Task_Execution_Model_and_State_Management_Strategy.md) - Temporal 워크플로우
+**선행 결정:**
+- [ADR-001: AI 서비스 엔드포인트 외부 노출](./001_How_to_Securely_Expose_AI_API_Endpoint_[Nginx%20OSS].md) — Edge Layer
+- [ADR-002: AI 백엔드 범위 및 아키텍처 스타일](./002_Defining_Scope_and_Architecture_Style_of_AI_Backend_Application.md) — 파이프라인 정의
+- [ADR-003: 추론 작업 실행 모델](./003_Inference_Task_Execution_Model_and_State_Management_Strategy.md) — Temporal 워크플로우, Activity 개념
+
+**후속 결정 (본 ADR의 Connector를 누가/어디서 호출하는지 구체화):**
+- [ADR-006: Worker 리소스 분리](./006_Worker_Resource_Separation_and_Parallel_Processing_Strategy.md) — Accelerator Worker가 Connector로 추론 요청
+- [ADR-007: 추론 서버 배포 경계](./007_Inference_Server_Deployment_and_Worker_Communication_Boundary.md) — Connector가 통신할 추론 서버의 배포 책임
 
 ---
 
