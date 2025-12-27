@@ -201,6 +201,8 @@ AI 추론은 전통적인 웹 요청과 **근본적으로 다른 특성**을 가
 | **Task Queue** | 모델별/리소스별 큐 분리 | GPU/CPU 워커 분리 가능 |
 | **Worker** | 파이프라인 실행 프로세스 | 수평 확장, 장애 격리 |
 
+> **Note**: Task Queue 기반 GPU/CPU Worker 분리, 병렬 처리 전략, Worker 슬롯 관리 등 구체적인 Worker 구성은 **[ADR-006: Worker 리소스 분리 및 병렬 처리 전략](./006_Worker_Resource_Separation_and_Parallel_Processing_Strategy.md)**에서 결정한다.
+
 ---
 
 ### 2.3 결정 #3: SSE 기반 결과 스트리밍
@@ -283,8 +285,8 @@ AI 추론은 전통적인 웹 요청과 **근본적으로 다른 특성**을 가
 │                                    │                                     │
 │                                    ▼                                     │
 │   ┌─────────────────────────────────────────────────────────────────┐   │
-│   │  Workers                                                         │   │
-│   │  ───────                                                         │   │
+│   │  Workers (상세: ADR-006)                                         │   │
+│   │  ─────────────────────────                                       │   │
 │   │  • CPU Worker: 전처리, 후처리 Activity                           │   │
 │   │  • GPU Worker: 추론 Activity                                     │   │
 │   │  • Heartbeat 패턴으로 장시간 작업 생존 신호                      │   │
@@ -642,3 +644,4 @@ Temporal 채택 시 감수해야 할 **구조적 한계**를 명시한다. 이�
 | 2024-12-27 | System Architect | 추상화 레벨 상향 — 구현 세부사항 제거, 전략적 의사결정 중심으로 재구성 |
 | 2024-12-27 | System Architect | 제약/한계/리스크 보완 — Determinism, Event History 한계, Payload 2MB, SSE 경로 분리, 확장 패턴 추가 |
 | 2024-12-27 | System Architect | Dual Path 원칙 명확화 — 스트리밍 채널 구현을 ADR-005로 위임, 구체적 기술 선택 제거 |
+| 2024-12-27 | System Architect | Worker 구성 위임 — GPU/CPU Worker 분리, 병렬 처리 전략을 ADR-006으로 위임 |
